@@ -19,3 +19,11 @@ body{
   --text-font: 'Inter', sans-serif;
   --title-font: 'Manrope', sans-serif;
 }
+.widthChange{
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: .4s;
+}
+.newChange{
+  transform: scaleX(1);
+}
