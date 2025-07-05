@@ -13,41 +13,52 @@
 <body>
     <header>
         <div class="w-[100vw] relative">
-            <div class="flex items-center justify-between bg-black text-white p-[19px_20px] w-[100vw]">
-                <ul class="capitalize flex space-x-6 ml-[345px]">
+            <div
+                class="max-[715px]:flex-col flex items-center justify-between bg-black text-white p-[19px_20px] max-[415px]:py-[14px] w-[100vw]">
+                <ul class="capitalize flex space-x-6 ml-[345px] max-[1220px]:ml-0 ">
                     <li class="hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">career</li>
                     <li class="hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">faq</li>
                     <li class="hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">rewards</li>
                     <li class="hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">media</li>
                 </ul>
 
-                <ul class="flex items-center gap-[30px]">
+                <ul class="max-[450px]:flex-col max-[415px]:mt-1 max-[450px]:gap-[2px] flex items-center gap-[30px]">
                     <li class="flex items-center space-x-2.5"><i
-                            class='bx  bx-envelope text-[21px] text-[var(--theme-color)]'></i>
-                        <p class="text-[17px] font-[400] hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">
+                            class='bx  bx-envelope text-[21px] text-[var(--theme-color)] max-[415px]:text-[18px]'></i>
+                        <p
+                            class="max-[415px]:text-[15px] text-[17px] font-[400] hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">
                             info@example.com</p>
                     </li>
                     <li class="flex items-center space-x-2.5"><i
-                            class='bx  bx-location text-[21px] text-[var(--theme-color)]'></i>
-                        <p class="text-[17px] font-[400]">Find Nearest Branch</p>
+                            class='bx  bx-location text-[21px] text-[var(--theme-color)] max-[415px]:text-[18px]'></i>
+                        <p class="text-[17px] font-[400] max-[415px]:text-[15px]">Find Nearest Branch</p>
                     </li>
                 </ul>
             </div>
 
 
-            <div class="w-[100vw] flex justify-end items-center h-[98px] capitalize pr-3.5">
-                <div class="bg-[var(--theme-color)] text-white absolute left-0 top-0 p-[62px_67px]" style="clip-path: polygon(100% 0, 92% 50%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
-"><img src="img/logo.png"></div>
+            <div class="w-[100vw] flex justify-end items-center h-[98px] max-[415px]:h-[75px] capitalize pr-3.5">
+                <div
+                    class="max-[415px]:p-[21px_12px] max-[415px]:top-[103px] custom-clip max-[715px]:top-[87px] max-[1220px]:p-[30.5px_30px] max-[1220px]:top-[63px] max-[1220px]:left-[15px] bg-[var(--theme-color)] text-white absolute left-0 top-0 p-[62px_67px]">
+                    <img src="img/logo.png" class="w-[175px]">
+                </div>
                 <div>
-                    <ul class="flex space-x-8 text-[18px] font-[500] ">
-                        <li class="text-[var(--theme-color)] flex items-center hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">home<i class='bx  bx-chevron-down text-[21px]'></i></li>
+                    <ul class="flex space-x-8 text-[18px] font-[500] max-[1220px]:hidden">
+                        <li
+                            class="text-[var(--theme-color)] flex items-center hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">
+                            home<i class='bx  bx-chevron-down text-[21px]'></i></li>
                         <li class="hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">about </li>
-                        <li class="flex items-center hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">services<i class='bx  bx-chevron-down text-[21px]'></i> </li>
-                        <li class="flex items-center hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">pages<i class='bx  bx-chevron-down text-[21px]'></i> </li>
+                        <li class="flex items-center hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">
+                            services<i class='bx  bx-chevron-down text-[21px]'></i> </li>
+                        <li class="flex items-center hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">
+                            pages<i class='bx  bx-chevron-down text-[21px]'></i> </li>
                         <li class="hover:text-[var(--theme-color)] cursor-pointer duration-[.4s]">contact</li>
                     </ul>
                 </div>
-                <div class="flex space-x-3 ml-[130px]">
+                <div class="hidden max-[1220px]:block mr-[-70px] max-[715px]:mr-0">
+                    <i class='bx  bx-menu-wider text-[32px]'></i>
+                </div>
+                <div class="flex space-x-3 ml-[130px] max-[715px]:hidden">
                     <button class="border font-bold p-[13px_30px] capitalize">login</button>
                     <button
                         class="font-bold text-white rounded-[1px] capitalize p-[12px_30px] bg-[var(--theme-color)]">open
@@ -58,16 +69,22 @@
     </header>
 
     <div class="absolute flex left-[15px] bottom-[50px] items-center space-x-2">
-        <div class="clickChange cursor-pointer rounded-[100%] text-[25px] bg-[var(--theme-color)] p-[9px_9px] flex text-white"><i
-                class='bx  bx-palette'></i>
+        <div
+            class="clickChange cursor-pointer rounded-[100%] text-[25px] bg-[var(--theme-color)] p-[9px_9px] flex text-white">
+            <i class='bx  bx-palette'></i>
         </div>
         <div class="widthChange flex items-center space-x-1 ">
-            <div class="cursor-pointer bg-[var(--theme-color)] w-[31px] h-[31px] rounded-[100%] border-amber-50"></div>
-            <div class="cursor-pointer bg-[var(--pink-color)] w-[31px] h-[31px] rounded-[100%] border-amber-50"></div>
-            <div class="cursor-pointer bg-[var(--violet-color)] w-[31px] h-[31px] rounded-[100%] border-amber-50"></div>
-            <div class="cursor-pointer bg-[var(--crimson-color)] w-[31px] h-[31px] rounded-[100%] border-amber-50">
+            <div class="asdcolor cursor-pointer bg-[var(--theme-color)] w-[31px] h-[31px] rounded-[100%] border-amber-50"
+                data-color="#EB292C"></div>
+            <div class="asdcolor cursor-pointer bg-[var(--pink-color)] w-[31px] h-[31px] rounded-[100%] border-amber-50"
+                data-color="#FFC0CB"></div>
+            <div class="asdcolor cursor-pointer bg-[var(--violet-color)] w-[31px] h-[31px] rounded-[100%] border-amber-50"
+                data-color="#7F00FF"></div>
+            <div class="asdcolor cursor-pointer bg-[var(--crimson-color)] w-[31px] h-[31px] rounded-[100%] border-amber-50"
+                data-color="#DC143C">
             </div>
-            <div class="cursor-pointer bg-[var(--orange-color)] w-[31px] h-[31px] rounded-[100%] border-amber-50">
+            <div class="asdcolor cursor-pointer bg-[var(--orange-color)] w-[31px] h-[31px] rounded-[100%] border-amber-50"
+                data-color="#FFA500">
             </div>
         </div>
     </div>

@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
 @import "tailwindcss";
-*{
+
+* {
   font-family: var(--text-font);
 }
-h1,h2,h3,button{
+
+h1,
+h2,
+h3,
+button {
   font-family: var(--title-font);
 }
-body{
+
+body {
   font-family: 'Manrope', sans-serif;
 }
-:root{
+
+:root {
   --theme-color: #EB292C;
   --secondary-color: #0A0F20;
   --pink-color: #FFC0CB;
@@ -19,11 +26,25 @@ body{
   --text-font: 'Inter', sans-serif;
   --title-font: 'Manrope', sans-serif;
 }
-.widthChange{
+
+.widthChange {
   transform-origin: left;
   transform: scaleX(0);
   transition: .4s;
 }
-.newChange{
+
+.newChange {
   transform: scaleX(1);
+}
+
+@layer utilities {
+  .custom-clip {
+    clip-path: polygon(100% 0, 92% 50%, 100% 100%, 0% 100%, 0 49%, 0% 0%);
+  }
+
+  @media (max-width: 1220px) {
+    .custom-clip {
+      clip-path: none;
+    }
+  }
 }
